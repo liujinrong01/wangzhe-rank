@@ -1,5 +1,5 @@
 export default definePageConfig({
-  navigationBarTitleText: '王者战力排行榜',
+  navigationBarTitleText: '王者改名',
   usingComponents: {},
   enableShareAppMessage: true,
   enableShareTimeline: true,

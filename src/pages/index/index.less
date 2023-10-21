@@ -1,23 +1,27 @@
 
 page {
     background-color: #F3F3F3;
+
+
 }
 
 .index {
     padding-top: 25px;
+  padding-bottom: 25px;
+  //padding-bottom: calc(var(--nutui-tabbar-height, 100rpx) + env(safe-area-inset-bottom));
 
     .kv-swiper{
         width: 700px;
-        height: 300px;
+        height: 393.75px;
         margin:0 auto;
         border-radius: 10px;
         overflow: hidden;
 
         .kv-img {
             width: 100%;
-            height: 300px;
+            //height: 300px;
         }
-        
+
     }
 
     .form-box {
@@ -35,7 +39,7 @@ page {
         .nut-button {
             width: 660px;
             margin: 30px auto 10px;
-        } 
+        }
     }
 
 
@@ -53,17 +57,115 @@ page {
             justify-content: space-between;
             padding: 28px 32px;
 
-            
+            font-size: 32px;
+            color: #333333;
+
+
+
             .right {
                 display: flex;
                 align-items: center;
                 color: #999;
 
                 font-size: 26px;
-                
+
             }
 
         }
+
+      .list-box {
+
+        padding-left: 28px;
+        //max-height: 400px;
+        //overflow-y: auto;
+
+        .list-item {
+          display: flex;
+          padding: 28px 32px 28px 0;
+          border-bottom: 1px solid #eee;
+
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          .img {
+            width: 64px;
+            height: 64px;
+            border-radius: 4px;
+            margin-right: 20px;
+          }
+
+          .name {
+            color: #333333;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+          }
+        }
+
+
+      }
     }
-   
+
+  .popup-box {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    box-sizing: border-box;
+    transform: none;
+    padding: 0!important;
+
+    .hero-item {
+      //padding: 10px 0;
+    }
+
+    .nut-elevator__list__item__name {
+      padding: 20px 40px;
+    }
+
+    .hero-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+    }
+  }
+
+  .result-box {
+    border-radius: 32px;
+    background: #FFF;
+    padding: 48px ;
+    width: 660px;
+    box-sizing: border-box;
+
+    .result-title {
+      text-align: center;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 64px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .result-content {
+      text-align: left;
+      color: #666;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 50px;
+    }
+
+    .confirm-btn {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
 }
